@@ -1,5 +1,5 @@
 ---
-engines:
+plugins:
   brakeman:
     enabled: true
   bundler-audit:
@@ -20,13 +20,7 @@ engines:
     enabled: true
     config:
       config: .stylelintrc
-ratings:
-  paths:
-  - Gemfile.lock
-  - app/**
-  - lib/**
-  - "**.rb"
-exclude_paths:
+exclude_patterns:
 - config/
 - db/
 - vendor/
